@@ -16,7 +16,11 @@ The model is trained on a custom configuration file that specifies the number of
 The model is trained for 75 epochs using the Adam optimizer and a batch size of 16.
 The model was trained on [Google Colab], which is a free cloud service that provides access to GPUs and TPUs. 
 
+Counting Yellow Plates 
+
+This project also includes a script that counts the number of yellow plates in the validation dataset. Yellow plates are used for commercial vehicles, and they can be distinguished from white plates by their color. The script uses OpenCV to convert the images to HSV color space and apply a mask to filter out the yellow pixels. If the percentage is greater than 50%, then the number plate is counted as yellow. 
 Results 
 
 The model achieves an average precision (AP) of 0.736 and an average recall (AR) of 0.774  on the validation set.
 The model can detect most of the number plates of the cars in various lighting conditions, angles, and distances. 
+The finally the Number of yellow numberplates are detect and its count is given  
